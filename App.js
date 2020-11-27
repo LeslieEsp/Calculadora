@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar, YellowBox, Button} fro
 import Forms from "./src/components/Forms"; 
 import Footer from "./src/components/Footer";
 import ResultCalculation from "./src/components/ResultCalculation";
-import color from "./src/utils/colors";
+import colors from "./src/utils/colors";
 
 
 YellowBox.ignoreWarnings(['Picker has been extracted']);
@@ -48,7 +48,7 @@ export default function App() {
        setTotal({
             res: i,
         })
-      }else if(operacion == "division"){
+      }else if(operaciones == "division"){
        const i = (cantidad1 / cantidad2);
 
        setTotal({
@@ -75,7 +75,7 @@ export default function App() {
             setCantidad2={setCantidad2}
             setOperaciones={setOperaciones}
           />
-          <Result
+          <ResultCalculation
             cantidad1={cantidad1}
             cantidad2={cantidad2}
             operaciones={operaciones}

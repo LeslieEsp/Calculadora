@@ -9,10 +9,10 @@ export default function ResultCalculation(props) {
             {total && (
                 <View style={styles.boxContent}>
                     <Text style={styles.title}>Resumen</Text>
-                    <DataResult title={"Cantidad 1:"} value={`$ ${cantidad1}`}/>
-                    <DataResult title={"Cantida 2:"} value={`${cantidad2}%`}/>
+                    <DataResult title={"Cantidad 1:"} value={` ${cantidad1}`}/>
+                    <DataResult title={"Cantida 2:"} value={`${cantidad2}`}/>
                     <DataResult title={"Operacion seleccionada:"} value={`${operaciones} `}/>
-                    <DataResult title={"Resultado total:"} value={`$ ${total.res}`}/>
+                    <DataResult title={"Resultado total:"} value={` ${total.res}`}/>
                     </View>
             )
             }
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         marginBottom: 5,
     }
-})
+});
